@@ -8,14 +8,17 @@ Required:
 - youtube-dl
 
 Download the script. Add permissions:
+
 `chmod +x ./hls-to-mp4.bashrc`
 
 Create the input file with videos (and captions) to download. 
 
 Input file only has videos to download:
+
 `./hls-to-mp4.bashrc -f <input file path>`
 
 Input file has videos and captions to download:
+
 `./hls-to-mp4.bashrc -s -f <input file path>`
 
 ## Format of Input File
@@ -23,11 +26,12 @@ Input file has videos and captions to download:
 Each line in the input file is a video to download and optionally, its corresponding captions. Each line is split by '|' and parsed. 
 
 Video and caption:
-<pre>file name to save as with no extensions | full url for .m3u8 video | full url to captions</pre>
+
+`file name to save as with no extensions | full url for .m3u8 video | full url to captions`
 
 Video only:
-<pre>file name to save as with no extensions | full url for .m3u8 video</pre>
 
+`file name to save as with no extensions | full url for .m3u8 video`
 ## Important Note(s)
 
 You cannot have an input file that has both lines of videos with and without caption urls. The input file must either all be videos without captions to download or videos with captions to download.
