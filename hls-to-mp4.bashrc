@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+###
+## Last modified: Aug 9, 2020
+## Author: @egg-bread (GitHub)
+###
+
 separatesubs=
 file=
 totalvideos=0
