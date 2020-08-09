@@ -46,7 +46,7 @@ downloadMp4Subs() {
         url=`echo $url | xargs`
         subs=`echo $subs | xargs`
         download-video "$savename" "$url"
-        download-subtitles "$url" "$savename"
+        download-subtitles "$subs" "$savename"
         downloadedvideos=$((downloadedvideos+1)) # increment dl count
     done < $file
 }
