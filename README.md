@@ -1,6 +1,8 @@
 # hls-to-mp4
 
-**hls-to-mp4** is a bash script that downloads HLS .m3u8 format videos from a formatted input file. If the videos have non-embedded captions (such as in WebVTT format), you can include them in the input file to be downloaded with their corresponding video as .srt files.
+**hls-to-mp4** is a bash script that downloads HLS .m3u8 format videos from a formatted input file. If the videos have non-embedded captions (such as in WebVTT format), you can include them in the input file to be downloaded with their corresponding video as .srt files. 
+
+**Why?** I made this for my own personal use.
 
 ## Usage
 Required:
