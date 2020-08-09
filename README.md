@@ -12,8 +12,10 @@ Video and caption:
 Video only:
 <pre>file name to save as with no extensions | full url for .m3u8 video</pre>
 
-The input file should have a new line at the end of the file as in the samples.
-
 ## Important Note(s)
 
 You cannot have an input file that has both lines of videos with and without caption urls. The input file must either all be videos without captions to download or videos with captions to download.
+
+Videos (and captions) are saved to the directory where the script is executing.
+
+The input file should have a new line at the end of the file as in the samples.

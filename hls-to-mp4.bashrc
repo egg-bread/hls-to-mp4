@@ -10,7 +10,7 @@ invalid() {
 }
 
 help() {
-    echo "hls-to-mp4 uses youtube-dl to download .m3u8 playlists as .mp4 and the videos' subtitles (has to be ffmpeg-supported type) to .srt to the script's executing directory."
+    echo "hls-to-mp4 uses youtube-dl to download .m3u8 playlists as .mp4 and the videos' captions (has to be ffmpeg-supported type like .vtt) to .srt"
     echo "Usage: hls-to-mp4: [[[-f | --file file] [-s | --subs]] | [[-h | --help]]"
 }
 
