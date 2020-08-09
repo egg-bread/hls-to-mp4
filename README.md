@@ -2,6 +2,22 @@
 
 **hls-to-mp4** is a bash script that downloads HLS .m3u8 format videos from a formatted input file. If the videos have non-embedded captions (such as in WebVTT format), you can include them in the input file to be downloaded with their corresponding video as .srt files.
 
+## Usage
+Required:
+- ffmpeg
+- youtube-dl
+
+Download the script. Add permissions:
+`chmod +x ./hls-to-mp4.bashrc`
+
+Create the input file with videos (and captions) to download. 
+
+Input file only has videos to download:
+`./hls-to-mp4.bashrc -f <input file path>`
+
+Input file has videos and captions to download:
+`./hls-to-mp4.bashrc -s -f <input file path>`
+
 ## Format of Input File
 
 Each line in the input file is a video to download and optionally, its corresponding captions. Each line is split by '|' and parsed. 
