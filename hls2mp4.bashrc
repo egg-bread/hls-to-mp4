@@ -7,7 +7,6 @@
 
 separatesubs=
 file=
-totalvideos=0
 downloadedvideos=0
 
 invalid() {
@@ -41,7 +40,7 @@ download-subtitles() {
 
 downloadMp4NoSubs() {
     echo "Downloading videos..."
-    while IFS='|' read -r savename url
+    while IFS='|' read -r -d ";" savename url
     do
         savename=`echo $savename | xargs`
         url=`echo $url | xargs`
@@ -52,7 +51,7 @@ downloadMp4NoSubs() {
 
 downloadMp4Subs() {
     echo "Downloading videos with corresponding subtitles..."
-    while IFS='|' read -r savename url subs
+    while IFS='|' read -r -d ";" savename url subs
     do 
         savename=`echo $savename | xargs`
         url=`echo $url | xargs`
@@ -88,7 +87,7 @@ if [[ -f "$file" ]]; then
     else 
         downloadMp4NoSubs
     fi
-    echo "hls-to-mp4: Complete. Downloaded $downloadedvideos/$totalvideos video(s)."
+    echo "hls-to-mp4: Complete. Downloaded $downloadedvideos video(s)."
 else 
     echo "$file does not exist!"
 fi
