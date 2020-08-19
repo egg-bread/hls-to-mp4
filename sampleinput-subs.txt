@@ -1,2 +1,6 @@
 Video 1 | https://###/videos/###/hls/###.m3u8 | https://###/attachment/###.vtt 
 Video 2 | https://###/videos/###/hls/###.m3u8 | https://###/attachment/###.vtt
+Video 3 | https://###/videos/###/hls/###.m3u8 | https://###/attachment/###.vtt
+Video 4 | https://###/videos/###/hls/###.m3u8 | https://###/attachment/###.vtt
+Video 5 | https://###/videos/###/hls/###.m3u8 | https://###/attachment/###.vtt
+Video 6 | https://###/videos/###/hls/###.m3u8 | https://###/attachment/###.vtt

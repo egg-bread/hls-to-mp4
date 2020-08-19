@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ###
-## Last modified: Aug 9, 2020
+## Last modified: Aug 19, 2020
 ## Author: @egg-bread (GitHub)
 ###
 
@@ -19,11 +19,23 @@ help() {
     echo "Usage: hls-to-mp4: [[[-f | --file file] [-s | --subs]] | [[-h | --help]]"
 }
 
+divider() {
+    echo "======="
+}
+
 download-video() {
+    divider
+    echo "DOWNLOADING VIDEO TO LOCATION: $1.mp4"
+    echo "DOWNLOADING FROM: $2"
+    divider
     youtube-dl -f mp4 -o "$1.mp4" "$2"
 }
 
 download-subtitles() {
+    divider
+    echo "DOWNLOADING SUBTITLES TO LOCATION: $2.srt"
+    echo "DOWNLOADING FROM: $1"
+    divider
     ffmpeg -i "$1" "$2.srt"
 }
 
@@ -81,3 +93,5 @@ else
     echo "$file does not exist!"
 fi
 
+# TODO: 
+# mixed download types (input file with videos without and with subtitle dls)
