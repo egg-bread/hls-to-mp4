@@ -34,10 +34,14 @@ Video and caption:
 Video only:
 
 `file name to save as with no extensions | full url for .m3u8 video`
+
+The file name is applied to the name of the saved video and captions. If you open the video in VLC, the captions should automatically appear since the .srt file is the same name as the video.
+
 ## Important Note(s)
 
 You cannot have an input file that has both lines of videos with and without caption urls. The input file must either all be videos without captions to download or videos with captions to download.
 
-Videos (and captions) are saved to the directory where the script is executing.
+Videos (and captions) are saved to the directory where the script is executing in the sample input files. You can include the path of where you want it to be saved:
+` /Users/jenny/Videos/Season 1/Episode 1 | ...` which will save the video to **/Users/jenny/Videos/Season 1** as **Episode 1.mp4**
 
 The input file should have a new line at the end of the file as in the samples.
