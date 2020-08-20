@@ -42,6 +42,8 @@ The file name is applied to the name of the saved video and captions. If you ope
 You cannot have an input file that has both lines of videos with and without caption urls. The input file must either all be videos without captions to download or videos with captions to download.
 
 Videos (and captions) are saved to the directory where the script is executing in the sample input files. You can include the path of where you want it to be saved:
-` /Users/jenny/Videos/Season 1/Episode 1 | ...` which will save the video to **/Users/jenny/Videos/Season 1** as **Episode 1.mp4**
+`/Users/jenny/Videos/Season 1/Episode 1 | ...` which will save the video to **/Users/jenny/Videos/Season 1** as **Episode 1.mp4**
+
+If a directory does not exist, it will create the directory. For example, if `/Users/jenny/Videos` does not exist, it will create it and save the video/subtitles there.
 
 If a file exists at the specified save location for a video and/or subtitles, it will NOT overwrite that file. It will just skip that download.
